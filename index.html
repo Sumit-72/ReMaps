@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REMaps</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTlYqJ2iJeZyRg2Q94V_MPyrrf6OsGMDM&libraries=places"></script>
+
+  <style>
+    #map {
+      height: 500px;
+      width: 100%;
+    }
+    .info-window {
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+    }
+    .info-window img {
+      max-width: 100px;
+      height: auto;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+    <header style="background-color: #001F3F;">
+        <nav>
+            <div class="logo">REMaps</div>
+            <button id="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul id="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#map">Map</a></li>
+                <li><a href="#popular-locations">Popular Locations</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main style="width: 100%; padding:2px">
+
+      <section id="search" style="display: flex; justify-content: flex-end; width: 100%;">
+        <div class="autocomplete" style="margin: 20px !important; width: 30%; display: flex; align-items: center;">
+          <input type="text" id="searchInput" placeholder="Search for a location..." aria-label="Search for a location">
+          <button id="search-button"><i class="fas fa-search"></i> Search</button>
+          <button id="speakButton"><i class="fas fa-volume-up"></i> Speak</button>
+          <div id="suggestions" class="suggestions"></div>
+        </div>
+      </section>
+      
+    <div class="p-md-5 text-center bg-body-tertiary" 
+            style="height: 700px; background-image: url('https://skilloutlook.com/storage/2020/12/BIT-Mesra-25-Dec-2020.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; padding: 0; display: flex; flex-direction: column; justify-content: center;margin-bottom:20px">
+            <div class="col-md-6 mx-auto">
+                
+                
+                <div style="position: relative; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh;">
+    
+                            <h1 style="color: #ff6347; 
+                text-align: center; 
+                font-size: 50px !important;
+                font-weight: bolder;
+                display: flex;  /* Flexbox layout */
+                align-items: center;  /* Vertically center content */
+                justify-content: center; /* Ensure equal spacing */
+                background-color: #fcfcfcac;
+                padding: 20px;
+                border-radius: 20px;
+                white-space: nowrap;
+                animation: pop 1s ease-in-out infinite alternate;
+                transition: transform 0.3s;
+                font-family: 'Arial', sans-serif;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                animation: fadeIn 2s ease-in-out, colorChange 5s infinite alternate;"
+                onmouseover="this.style.transform='scale(1.1)';" 
+                onmouseout="this.style.transform='scale(1)';">
+
+            <!-- First video (left) -->
+            <video autoplay muted loop playsinline style="padding: 5px; 
+                                                        width: 70px; 
+                                                        height: 70px; 
+                                                        object-fit: cover;">
+                <source src="a2.webm" type="video/webm">
+                Your browser does not support the video tag.
+            </video>
+
+            <!-- Text in the middle -->
+            <span style="margin: 0 20px;">Your College's own Campus Navigator
+                <h3 class="fw-normal text-muted mb-3" style="white-space: nowrap; color: rgb(0, 0, 0) !important; text-align: center;">
+                    Explore your campus with ease
+                </h3>
+            </span>
+            
+
+            <!-- Second video (right) -->
+            <video autoplay muted loop playsinline style="padding: 5px; 
+                                                        width: 200px; 
+                                                        height: 200px; 
+                                                        object-fit: cover;">
+                <source src="a3.webm" type="video/webm">
+                Your browser does not support the video tag.
+            </video>
+
+            
+        </h1>
+
+<style>
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pop {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.05); }
+}
+
+@keyframes colorChange {
+    0% { color: #ff6347; }
+    100% { color: #32cd32; }
+}
+</style>
+
+                
+                    <!-- Centered h3 -->
+                    
+                
+                </div>
+                
+                <style>
+                @keyframes fadeIn {
+                    from { opacity: 0; transform: translateY(-20px); }
+                    to { opacity: 1; transform: translateY(0); }
+                }
+                
+                @keyframes pop {
+                    0% { transform: scale(1); }
+                    100% { transform: scale(1.05); }
+                }
+                
+                @keyframes colorChange {
+                    0% { color: #ff6347; }
+                    100% { color: #32cd32; }
+                }
+                </style>
+                
+        </div>
+        <div class="product-device shadow-sm d-none d-md-block"></div>
+        <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+    </div>
+
+    <!--MAps-->
+    <div style="margin-top:20px; margin-bottom:40px"></div>
+        <section id="map">
+            <h2>Campus Map</h2>
+            <div id="map"></div>
+        </section>
+    </div>
+        
+
+<section id="popular-locations" style="background: beige !important;">
+
+    <div style="justify-content: center;align-items:center; display:flex">
+        <h1 style="color: #ff6347; 
+    text-align: center; 
+    font-size:50px !important;
+    font-weight:bolder;
+    display:inline-block;
+    
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 20px;
+    
+    animation: pop 1s ease-in-out infinite alternate;
+    transition: transform 0.3s;
+    font-family: 'Arial', sans-serif; 
+    font-size: 2.5em;
+    margin-top: 20px;
+     margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out, colorChange 5s infinite alternate;"
+    onmouseover="this.style.transform='scale(1.1)';" 
+onmouseout="this.style.transform='scale(1)';"
+>
+Popular Locations
+</h1>
+    </div>
+
+<style>
+@keyframes fadeIn {
+from { opacity: 0; transform: translateY(-20px); }
+to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pop {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.05); }
+}
+
+@keyframes colorChange {
+0% { color: #ff6347; }
+100% { color: #32cd32; }
+}
+</style>
+            
+            <!--Album-->
+    <div class="album py-5 bg-body-tertiary" style="background: #FFDC7F !important;">
+        <div class="container">
+    
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col" id="librarySection">
+              <div class="card shadow-sm" style="height: 100%; position: relative;">
+                <img src="https://cache.careers360.mobi/media/presets/720X480/colleges/social-media/media-gallery/250/2017/11/17/Birla-Institute-of-Technology-Mesra-(1).png" 
+                     style="height: 200px; object-fit: cover;">
+                
+                <div style="border-radius: 20px; width: 60%; background-color: rgba(255, 255, 255, 0.673); 
+                            position: absolute; top: 35%; left: 50%; transform: translate(-50%, -50%); 
+                            color: black; font-size: 2rem; text-align: center;">
+                  <h1>Library</h1>
+                  <p style="font-size: medium;">Central hub for studying and research.</p>
+                </div>
+            
+                <div class="card-body" style="display: flex; flex-direction: column; justify-content: space-between;">
+                  <p class="card-text">Goa: Sun, beaches, vibrant nightlife, Portuguese charm, and adventure.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="#" id="viewMapLink" class="highlight-link" style="text-decoration: none; font-weight: bold; color: black;">
+                        <button type="button" class="btn btn-sm btn-outline-secondary" style="cursor: pointer;">
+                          View Map
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          
+            <div class="col" id="R&dSection">
+              <div class="card shadow-sm" style="height: 100%;">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/48/Bit_Mesra_5.JPG/220px-Bit_Mesra_5.JPG" style="height: 200px; object-fit: cover;">
+                <div style="border-radius: 20px; width: 60%; background-color: rgba(255, 255, 255, 0.673); position: absolute; top: 35%; left: 50%; transform: translate(-50%, -50%); color: black; font-size: 2rem; text-align: center;">
+                  <h1>R&D Building</h1>
+                  <p style="font-size: medium;">Gather with friends and participate in activities.</p>
+                </div>
+                <div class="card-body" style="display: flex; flex-direction: column; justify-content: space-between;">
+                  <p class="card-text">Jaipur: Royal palaces, vibrant markets, and historic forts in pink.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="index.html" style="text-decoration: none; font-weight: bold; color: black;">
+                        <button type="button" class="btn btn-sm btn-outline-secondary" style="cursor: pointer;">View Map</button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> 
+
+            <div class="col">
+                <div class="card shadow-sm" style="height: 100%;">
+                  <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/48/Bit_Mesra_5.JPG/220px-Bit_Mesra_5.JPG" style="height: 200px; object-fit: cover;">
+                  <div style="border-radius: 20px; width: 60%; background-color: rgba(255, 255, 255, 0.673); position: absolute; top: 35%; left: 50%; transform: translate(-50%, -50%); color: black; font-size: 2rem; text-align: center;">
+                    <h1>R&D Building</h1>
+                    <p style="font-size: medium;">Gather with friends and participate in activities.</p>
+                  </div>
+                  <div class="card-body" style="display: flex; flex-direction: column; justify-content: space-between;">
+                    <p class="card-text">Jaipur: Royal palaces, vibrant markets, and historic forts in pink.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="d1.html" style="text-decoration: none; font-weight: bold; color: black;">
+                          <button type="button" class="btn btn-sm btn-outline-secondary" style="cursor: pointer;">View Map</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+
+              <div class="col">
+                <div class="card shadow-sm" style="height: 100%;">
+                  <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/48/Bit_Mesra_5.JPG/220px-Bit_Mesra_5.JPG" style="height: 200px; object-fit: cover;">
+                  <div style="border-radius: 20px; width: 60%; background-color: rgba(255, 255, 255, 0.673); position: absolute; top: 35%; left: 50%; transform: translate(-50%, -50%); color: black; font-size: 2rem; text-align: center;">
+                    <h1>R&D Building</h1>
+                    <p style="font-size: medium;">Gather with friends and participate in activities.</p>
+                  </div>
+                  <div class="card-body" style="display: flex; flex-direction: column; justify-content: space-between;">
+                    <p class="card-text">Jaipur: Royal palaces, vibrant markets, and historic forts in pink.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="d1.html" style="text-decoration: none; font-weight: bold; color: black;">
+                          <button type="button" class="btn btn-sm btn-outline-secondary" style="cursor: pointer;">View Map</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+
+              <div class="col">
+                <div class="card shadow-sm" style="height: 100%;">
+                  <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/48/Bit_Mesra_5.JPG/220px-Bit_Mesra_5.JPG" style="height: 200px; object-fit: cover;">
+                  <div style="border-radius: 20px; width: 60%; background-color: rgba(255, 255, 255, 0.673); position: absolute; top: 35%; left: 50%; transform: translate(-50%, -50%); color: black; font-size: 2rem; text-align: center;">
+                    <h1>R&D Building</h1>
+                    <p style="font-size: medium;">Gather with friends and participate in activities.</p>
+                  </div>
+                  <div class="card-body" style="display: flex; flex-direction: column; justify-content: space-between;">
+                    <p class="card-text">Jaipur: Royal palaces, vibrant markets, and historic forts in pink.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="d1.html" style="text-decoration: none; font-weight: bold; color: black;">
+                          <button type="button" class="btn btn-sm btn-outline-secondary" style="cursor: pointer;">View Map</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+
+              <div class="col">
+                <div class="card shadow-sm" style="height: 100%;">
+                  <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/48/Bit_Mesra_5.JPG/220px-Bit_Mesra_5.JPG" style="height: 200px; object-fit: cover;">
+                  <div style="border-radius: 20px; width: 60%; background-color: rgba(255, 255, 255, 0.673); position: absolute; top: 35%; left: 50%; transform: translate(-50%, -50%); color: black; font-size: 2rem; text-align: center;">
+                    <h1>R&D Building</h1>
+                    <p style="font-size: medium;">Gather with friends and participate in activities.</p>
+                  </div>
+                  <div class="card-body" style="display: flex; flex-direction: column; justify-content: space-between;">
+                    <p class="card-text">Jaipur: Royal palaces, vibrant markets, and historic forts in pink.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="d1.html" style="text-decoration: none; font-weight: bold; color: black;">
+                          <button type="button" class="btn btn-sm btn-outline-secondary" style="cursor: pointer;">View Map</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+
+              <div class="col">
+                <div class="card shadow-sm" style="height: 100%;">
+                  <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/48/Bit_Mesra_5.JPG/220px-Bit_Mesra_5.JPG" style="height: 200px; object-fit: cover;">
+                  <div style="border-radius: 20px; width: 60%; background-color: rgba(255, 255, 255, 0.673); position: absolute; top: 35%; left: 50%; transform: translate(-50%, -50%); color: black; font-size: 2rem; text-align: center;">
+                    <h1>R&D Building</h1>
+                    <p style="font-size: medium;">Gather with friends and participate in activities.</p>
+                  </div>
+                  <div class="card-body" style="display: flex; flex-direction: column; justify-content: space-between;">
+                    <p class="card-text">Jaipur: Royal palaces, vibrant markets, and historic forts in pink.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="d1.html" style="text-decoration: none; font-weight: bold; color: black;">
+                          <button type="button" class="btn btn-sm btn-outline-secondary" style="cursor: pointer;">View Map</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+
+              <div class="col">
+                <div class="card shadow-sm" style="height: 100%;">
+                  <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/48/Bit_Mesra_5.JPG/220px-Bit_Mesra_5.JPG" style="height: 200px; object-fit: cover;">
+                  <div style="border-radius: 20px; width: 60%; background-color: rgba(255, 255, 255, 0.673); position: absolute; top: 35%; left: 50%; transform: translate(-50%, -50%); color: black; font-size: 2rem; text-align: center;">
+                    <h1>R&D Building</h1>
+                    <p style="font-size: medium;">Gather with friends and participate in activities.</p>
+                  </div>
+                  <div class="card-body" style="display: flex; flex-direction: column; justify-content: space-between;">
+                    <p class="card-text">Jaipur: Royal palaces, vibrant markets, and historic forts in pink.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="#" id="upperlawnLink" style="text-decoration: none; font-weight: bold; color: black;">
+                          <button type="button" class="btn btn-sm btn-outline-secondary" style="cursor: pointer;">View Map</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+            
+            <div class="col">
+              <div class="card shadow-sm" style="height: 100%;">
+                <img src="https://th.bing.com/th/id/OIP.zsAWAAFhQdYolIq3KDudNwHaE8?rs=1&pid=ImgDetMain" style="height: 200px; object-fit: cover;">
+                <div style="border-radius: 20px; width: 60%; background-color: rgba(255, 255, 255, 0.673); position: absolute; top: 35%; left: 50%; transform: translate(-50%, -50%); color: black; font-size: 2rem; text-align: center;">
+                  <h1>Sports Complex</h1>
+                  <p style="font-size: medium;">Stay active and enjoy various sports facilities.</p>
+                </div>
+                <div class="card-body" style="display: flex; flex-direction: column; justify-content: space-between;">
+                  <p class="card-text">Tawang is a serene Himalayan town known for its stunning monasteries, scenic landscapes, and vibrant culture.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="d1.html" style="text-decoration: none; font-weight: bold; color: black;">
+                        <button type="button" class="btn btn-sm btn-outline-secondary" style="cursor: pointer;">View Map</button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> 
+
+            <div class="col">
+                <div class="card shadow-sm" style="height: 100%;">
+                  <img src="https://th.bing.com/th/id/OIP.zsAWAAFhQdYolIq3KDudNwHaE8?rs=1&pid=ImgDetMain" style="height: 200px; object-fit: cover;">
+                  <div style="border-radius: 20px; width: 60%; background-color: rgba(255, 255, 255, 0.673); position: absolute; top: 35%; left: 50%; transform: translate(-50%, -50%); color: black; font-size: 2rem; text-align: center;">
+                    <h1>Sports Complex</h1>
+                    <p style="font-size: medium;">Stay active and enjoy various sports facilities.</p>
+                  </div>
+                  <div class="card-body" style="display: flex; flex-direction: column; justify-content: space-between;">
+                    <p class="card-text">Tawang is a serene Himalayan town known for its stunning monasteries, scenic landscapes, and vibrant culture.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="d1.html" style="text-decoration: none; font-weight: bold; color: black;">
+                          <button type="button" class="btn btn-sm btn-outline-secondary" style="cursor: pointer;">View Map</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+
+              <div class="col">
+                <div class="card shadow-sm" style="height: 100%;">
+                  <img src="https://th.bing.com/th/id/OIP.zsAWAAFhQdYolIq3KDudNwHaE8?rs=1&pid=ImgDetMain" style="height: 200px; object-fit: cover;">
+                  <div style="border-radius: 20px; width: 60%; background-color: rgba(255, 255, 255, 0.673); position: absolute; top: 35%; left: 50%; transform: translate(-50%, -50%); color: black; font-size: 2rem; text-align: center;">
+                    <h1>Sports Complex</h1>
+                    <p style="font-size: medium;">Stay active and enjoy various sports facilities.</p>
+                  </div>
+                  <div class="card-body" style="display: flex; flex-direction: column; justify-content: space-between;">
+                    <p class="card-text">Tawang is a serene Himalayan town known for its stunning monasteries, scenic landscapes, and vibrant culture.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="d1.html" style="text-decoration: none; font-weight: bold; color: black;">
+                          <button type="button" class="btn btn-sm btn-outline-secondary" style="cursor: pointer;">View Map</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+
+              <div class="col">
+                <div class="card shadow-sm" style="height: 100%;">
+                  <img src="https://th.bing.com/th/id/OIP.zsAWAAFhQdYolIq3KDudNwHaE8?rs=1&pid=ImgDetMain" style="height: 200px; object-fit: cover;">
+                  <div style="border-radius: 20px; width: 60%; background-color: rgba(255, 255, 255, 0.673); position: absolute; top: 35%; left: 50%; transform: translate(-50%, -50%); color: black; font-size: 2rem; text-align: center;">
+                    <h1>Sports Complex</h1>
+                    <p style="font-size: medium;">Stay active and enjoy various sports facilities.</p>
+                  </div>
+                  <div class="card-body" style="display: flex; flex-direction: column; justify-content: space-between;">
+                    <p class="card-text">Tawang is a serene Himalayan town known for its stunning monasteries, scenic landscapes, and vibrant culture.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="d1.html" style="text-decoration: none; font-weight: bold; color: black;">
+                          <button type="button" class="btn btn-sm btn-outline-secondary" style="cursor: pointer;">View Map</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+
+            
+            
+          </div> 
+          </div>
+        </div>
+      </div>
+        </section>
+
+
+  <section id = "about" style="margin-bottom: 0%;">
+    <div class="bg-dark text-secondary px-4 py-5 text-center" style="margin-top: 50px;width: 100% !important;background-color: #3A6D8C !important;">
+        <div class="py-5">
+        <h1 class="display-5 fw-bold text-white">About Campus Navigator</h1>
+        <div class="col-lg-6 mx-auto">
+            <p class="fs-5 mb-4" style="color: beige;"> Campus Navigator is your go-to tool for exploring and navigating our university campus. Whether you're a new student, visitor, or long-time member of our community, we're here to help you find your way around with ease.</p>
+        </div>
+        </div>
+    </div>
+</section>
+        
+    </main>
+
+    <footer style="margin-top: 0%;">
+        <p>&copy; 2024 Campus Navigator. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
