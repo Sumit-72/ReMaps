@@ -19,7 +19,7 @@ const HomePage: React.FC = () => {
               Explore our campus through this interactive map. Click on markers to see more details about each location.
             </p>
           </div>
-          <CampusMap apiKey="AIzaSyBTlYqJ2iJeZyRg2Q94V_MPyrrf6OsGMDM" />
+          <CampusMap apiKey={import.meta.env.VITE_API_KEY} />
         </div>
         
         <div id="locations" className="mb-16">
