@@ -1,4 +1,11 @@
 export interface Location {
+  _id: Key | null | undefined;
+  lng: any;
+  lat: any;
+  detail: ReactNode;
+  img: string | undefined;
+  url1: any;
+  url2: any;
   id: string;
   name: string;
   category: string;

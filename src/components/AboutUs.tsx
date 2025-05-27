@@ -8,7 +8,7 @@ const AboutUs: React.FC = () => {
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">About Campus Navigator</h2>
           <p className="max-w-2xl mx-auto text-lg text-gray-600">
-            We're dedicated to helping students, staff, and visitors navigate the campus efficiently and discover all it has to offer.
+            Campus Navigator is the best way to explore your campus—helping students, staff, and visitors navigate easily and discover everything it has to offer.
           </p>
         </div>
         

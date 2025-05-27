@@ -1,27 +1,13 @@
-import React from 'react';
-import AboutUs from '../components/AboutUs';
-import Features from '../components/Features';
+import React from 'react'
 
-const AboutPage: React.FC = () => {
+const Developer = () => {
   return (
-    <div className="min-h-screen pt-24 pb-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">About Campus Navigator</h1>
-          <p className="max-w-2xl mx-auto text-lg text-gray-600">
-            Learn more about our mission and the features that make Campus Navigator the best way to explore your campus.
-          </p>
-        </div>
-      </div>
-      
-      <AboutUs />
-      <Features />
-      
+    <>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="bg-blue-50 rounded-2xl p-8 md:p-12">
+        <div className="bg-blue-50 dark:bg-gray-800 rounded-2xl p-8 md:p-12">
           <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Team</h2>
-            <p className="max-w-2xl mx-auto text-lg text-gray-600">
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-4">Our Team</h2>
+            <p className="max-w-2xl mx-auto text-lg text-gray-600 dark:text-gray-300">
               Campus Navigator is developed and maintained by a dedicated team of students and faculty members who are passionate about improving campus accessibility.
             </p>
           </div>
@@ -65,23 +51,23 @@ const AboutPage: React.FC = () => {
                 bio: "Student government representative who gathers feedback and feature requests from the campus community."
               }
             ].map((member, index) => (
-              <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
+              <div key={index} className="bg-white dark:bg-gray-900 rounded-lg shadow-md overflow-hidden">
                 <div 
                   className="h-64 bg-cover bg-center"
                   style={{ backgroundImage: `url(${member.image})` }}
                 ></div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-900">{member.name}</h3>
-                  <p className="text-blue-500 mb-3">{member.role}</p>
-                  <p className="text-gray-600">{member.bio}</p>
+                  <h3 className="text-xl font-bold text-gray-900 dark:text-gray-100">{member.name}</h3>
+                  <p className="text-blue-500 dark:text-blue-300 mb-3">{member.role}</p>
+                  <p className="text-gray-600 dark:text-gray-300">{member.bio}</p>
                 </div>
               </div>
             ))}
           </div>
         </div>
       </div>
-    </div>
-  );
-};
+    </>
+  )
+}
 
-export default AboutPage;
+export default Developer

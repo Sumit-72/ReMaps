@@ -3,6 +3,7 @@ import { Location } from '../types/types';
 export const locations: Location[] = [
   {
     id: "main-library",
+    _id: 1,
     name: "Main Library",
     category: "Academic",
     description: "The Main Library is the central library facility on campus, housing over 2 million books, journals, and digital resources. It offers quiet study spaces, group study rooms, computer labs, and specialized research assistance.",
@@ -53,10 +54,17 @@ export const locations: Location[] = [
         content: "Students and faculty have access to over 200 computers, high-speed Wi-Fi, printing and scanning services, and specialized software. The library also lends laptops, tablets, cameras, and other equipment for academic use.",
         image: "https://images.pexels.com/photos/2041627/pexels-photo-2041627.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
       }
-    ]
+    ],
+    lat: 23.41299,
+      lng: 85.4397,
+      img: "https://th.bing.com/th?id=OIP._dpxdJcbfJnyecpAR4h9agHaE9&w=305&h=204&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2",
+      detail: "Capital of India",
+      url1: "#librarySection",
+      url2: "",
   },
   {
     id: "student-center",
+    _id: 1,
     name: "Student Center",
     category: "Campus Life",
     description: "The hub of student life on campus, offering dining options, recreational facilities, study spaces, and offices for student organizations. The Student Center hosts various events and serves as a central gathering place for the campus community.",
@@ -107,10 +115,17 @@ export const locations: Location[] = [
         content: "The building features multiple event venues including a grand ballroom, meeting rooms, and an outdoor plaza. These spaces host a variety of events throughout the year, from formal dances and cultural celebrations to club meetings and academic conferences.",
         image: "https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
       }
-    ]
+    ],
+    lng: 0,
+    lat: 0,
+    detail: undefined,
+    img: undefined,
+    url1: undefined,
+    url2: undefined
   },
   {
     id: "science-building",
+    _id: 2,
     name: "Science Building",
     category: "Academic",
     description: "A state-of-the-art facility housing the departments of Biology, Chemistry, Physics, and Environmental Science. The building features modern laboratories, research facilities, lecture halls, and collaborative learning spaces.",
@@ -156,10 +171,17 @@ export const locations: Location[] = [
         content: "The building features tiered lecture halls with multimedia capabilities, interactive classrooms designed for active learning, and informal study spaces throughout the building where students can collaborate or study independently.",
         image: "https://images.pexels.com/photos/356079/pexels-photo-356079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
       }
-    ]
+    ],
+    lng: 0,
+    lat: 0,
+    detail: undefined,
+    img: undefined,
+    url1: undefined,
+    url2: undefined
   },
   {
     id: "recreation-center",
+    _id: 3,
     name: "Recreation Center",
     category: "Recreation",
     description: "A comprehensive recreational facility offering fitness equipment, group exercise classes, indoor and outdoor sports courts, swimming pools, and wellness programs for students, faculty, and staff.",
@@ -210,10 +232,17 @@ export const locations: Location[] = [
         content: "In addition to indoor facilities, the Recreation Center manages outdoor tennis courts, basketball courts, playing fields, and an adventure program that offers equipment rentals and organized trips for hiking, camping, kayaking, and other outdoor activities.",
         image: "https://images.pexels.com/photos/1263426/pexels-photo-1263426.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
       }
-    ]
+    ],
+    lng: 0,
+    lat: 0,
+    detail: undefined,
+    img: undefined,
+    url1: undefined,
+    url2: undefined
   },
   {
     id: "performing-arts-center",
+    _id: 4,
     name: "Performing Arts Center",
     category: "Arts & Culture",
     description: "A premier venue for the performing arts, featuring multiple theaters, rehearsal spaces, and galleries. The center hosts student and professional performances in music, theater, dance, and film throughout the academic year.",
@@ -264,10 +293,17 @@ export const locations: Location[] = [
         content: "The center serves as the home for academic departments in music, theater, and dance. It contains classrooms, practice rooms, scene and costume shops, design studios, and faculty offices. Students majoring in the performing arts spend much of their time in this building developing their artistic skills.",
         image: "https://images.pexels.com/photos/2263436/pexels-photo-2263436.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
       }
-    ]
+    ],
+      lat: 23.41271265633959,
+      lng: 85.44161762033603,
+      img: "https://wallpaperaccess.com/full/1616136.jpg",
+      detail: "Economic Capital of India",
+      url1: "#R&dSection",
+      url2: "https://en.wikipedia.org/wiki/Mumbai",
   },
   {
     id: "student-dining-hall",
+    _id: 5,
     name: "Main Dining Hall",
     category: "Dining",
     description: "The largest dining facility on campus, offering a wide variety of cuisines and dietary options. The dining hall features multiple stations serving international dishes, comfort food, vegetarian and vegan options, and made-to-order specialties.",
@@ -313,10 +349,17 @@ export const locations: Location[] = [
         content: "The dining hall is committed to sustainable practices, including locally-sourced ingredients, composting, minimal food waste, and eco-friendly packaging. The facility has been recognized with Green Restaurant Certification for its environmental stewardship.",
         image: "https://images.pexels.com/photos/3735149/pexels-photo-3735149.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
       }
-    ]
+    ],
+    lng: 0,
+    lat: 0,
+    detail: undefined,
+    img: undefined,
+    url1: undefined,
+    url2: undefined
   },
   {
     id: "business-school",
+    _id: 6,
     name: "School of Business",
     category: "Academic",
     description: "Home to undergraduate and graduate business programs, featuring modern classrooms, a financial trading lab, case study rooms, and offices for faculty and administration.",
@@ -367,10 +410,17 @@ export const locations: Location[] = [
         content: "The school maintains strong relationships with businesses and corporations, which provide guest speakers, internship opportunities, and recruitment events. The Corporate Partners Program also funds scholarships, research initiatives, and facility improvements.",
         image: "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
       }
-    ]
+    ],
+    lng: 0,
+    lat: 0,
+    detail: undefined,
+    img: undefined,
+    url1: undefined,
+    url2: undefined
   },
   {
     id: "campus-bookstore",
+    _id: 7,
     name: "Campus Bookstore",
     category: "Services",
     description: "The official university bookstore, selling textbooks, course materials, school supplies, technology products, university apparel, and gifts. The store also offers textbook rental and buyback programs.",
@@ -409,6 +459,12 @@ export const locations: Location[] = [
         content: "The Campus Bookstore is the official source for university-branded merchandise. The store carries a wide selection of apparel, gifts, accessories, and memorabilia featuring university logos and mascots. Special collections are available for alumni, families, and athletic events.",
         image: "https://images.pexels.com/photos/1647976/pexels-photo-1647976.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
       }
-    ]
+    ],
+    lng: 0,
+    lat: 0,
+    detail: undefined,
+    img: undefined,
+    url1: undefined,
+    url2: undefined
   }
 ];

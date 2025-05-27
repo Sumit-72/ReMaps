@@ -4,7 +4,7 @@ import { MapPin, Mail, Phone, Facebook, Twitter, Instagram, Github as GitHub } f
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-gray-900 text-white dark:bg-gray-950">
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-1">
@@ -89,7 +89,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
         
-        <div className="mt-8 pt-8 border-t border-gray-700 text-center">
+        <div className="mt-8 pt-8 border-t border-gray-700 text-center dark:border-gray-800">
           <p className="text-sm text-gray-400">
             &copy; {new Date().getFullYear()} Campus Navigator. All rights reserved.
           </p>

@@ -4,6 +4,7 @@ import CampusMap from '../components/CampusMap';
 import LocationsList from '../components/LocationsList';
 import Features from '../components/Features';
 import AboutUs from '../components/AboutUs';
+import Developer from '../components/Developer';
 
 const HomePage: React.FC = () => {
   return (
@@ -34,6 +35,7 @@ const HomePage: React.FC = () => {
       
       <Features />
       <AboutUs />
+      <Developer />
     </div>
   );
 };
