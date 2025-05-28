@@ -1,11 +1,13 @@
+import { Key } from "react";
+
 export interface Location {
-  _id: Key | null | undefined;
-  lng: any;
-  lat: any;
-  detail: ReactNode;
-  img: string | undefined;
-  url1: any;
-  url2: any;
+   map_id: Key | number;
+  lng: number;
+  lat: number;
+  detail: string;
+  img: string | "";
+  url1: string;
+  url2: string;
   id: string;
   name: string;
   category: string;

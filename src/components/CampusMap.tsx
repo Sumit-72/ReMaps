@@ -84,7 +84,7 @@ const CampusMap: React.FC<GoogleMapProps> = ({ apiKey }) => {
       >
         {locations.map((loc) => (
           <Marker
-            key={loc._id}
+            key={loc.map_id}
             position={{ lat: loc.lat, lng: loc.lng }}
             onClick={() => handleLocationClick(loc.id)}
             title={loc.name}
