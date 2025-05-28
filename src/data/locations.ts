@@ -117,8 +117,8 @@ export const locations: Location[] = [
         image: "https://dubeat.com/wp-content/uploads/2018/11/Hackabit-1024x683.jpg"
       }
     ],
-    lng: 23.4109,
-    lat: 85.4360,
+    lat: 23.4109,
+    lng: 85.4360,
     detail: "https://a1performanceeuropeanautorepair.com/wp-content/uploads/2019/05/whats_a_bimmer.jpg",
     img: "https://a1performanceeuropeanautorepair.com/wp-content/uploads/2019/05/whats_a_bimmer.jpg",
     url1: `${window.location.origin}/location/cat-hall`,
@@ -173,8 +173,8 @@ export const locations: Location[] = [
         image: "https://bitmesra.ac.in/UploadedDocuments/user_jpradmincse/Gallery/_large_872020155342_IMG-20180317-WA00162dfb28fc-435d-4e32-9007-504dab417883.jpg"
       }
     ],
-    lng: 23.4131,
-    lat: 85.4410,
+    lat: 23.4131,
+    lng: 85.4410,
     detail: "https://a1performanceeuropeanautorepair.com/wp-content/uploads/2019/05/whats_a_bimmer.jpg",
     img: "https://a1performanceeuropeanautorepair.com/wp-content/uploads/2019/05/whats_a_bimmer.jpg",
     url1: `${window.location.origin}/location/r&d-building`,
@@ -234,8 +234,8 @@ export const locations: Location[] = [
         image: "https://static.zollege.in/public/reviewPhotos/247795/inbound7229587131537346614.jpg"
       }
     ],
-    lng: 23.4121,
-    lat: 85.4395,
+    lat: 23.4121,
+    lng: 85.4395,
     detail: "https://a1performanceeuropeanautorepair.com/wp-content/uploads/2019/05/whats_a_bimmer.jpg",
     img: "https://a1performanceeuropeanautorepair.com/wp-content/uploads/2019/05/whats_a_bimmer.jpg",
     url1: `${window.location.origin}/location/main-building`,
@@ -351,8 +351,8 @@ export const locations: Location[] = [
         image: "data:image/jpeg;base64,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"
       }
     ],
-    lng: 23.4106,
-    lat: 85.4446,
+    lat: 23.4106,
+    lng: 85.4446,
     detail: "https://a1performanceeuropeanautorepair.com/wp-content/uploads/2019/05/whats_a_bimmer.jpg",
     img: "https://a1performanceeuropeanautorepair.com/wp-content/uploads/2019/05/whats_a_bimmer.jpg",
     url1: `${window.location.origin}/location/rocketry`,
@@ -412,8 +412,8 @@ export const locations: Location[] = [
         image: "https://bitmesra.ac.in/UploadedDocuments/user_adminprod/Gallery/_large_2322022114341_IMG_03974dccace5-89f2-4ed7-aefe-4b816dc4785a.jpg"
       }
     ],
-    lng: 23.4115,
-    lat: 85.4400,
+    lat: 23.4115,
+    lng: 85.4400,
     detail: "https://a1performanceeuropeanautorepair.com/wp-content/uploads/2019/05/whats_a_bimmer.jpg",
     img: "https://a1performanceeuropeanautorepair.com/wp-content/uploads/2019/05/whats_a_bimmer.jpg",
     url1: `${window.location.origin}/location/production`,
@@ -467,8 +467,8 @@ export const locations: Location[] = [
         image: "https://images.deepai.org/chat-style-image/abf6d79edde94813bfb3a354e0f78d7b/output.jpg"
       }
     ],
-    lng: 23.4106,
-    lat: 85.4408,
+    lat: 23.4106,
+    lng: 85.4408,
     detail: "https://a1performanceeuropeanautorepair.com/wp-content/uploads/2019/05/whats_a_bimmer.jpg",
     img: "https://a1performanceeuropeanautorepair.com/wp-content/uploads/2019/05/whats_a_bimmer.jpg",
     url1: `${window.location.origin}/location/pharma-dept`,
@@ -512,8 +512,8 @@ export const locations: Location[] = [
         image: "https://api.deepai.org/job-view-file/0143b6ac-4c82-444b-8304-ef6b0cb12808/outputs/output.jpg"
       }
     ],
-    lng: 23.4116,
-    lat: 85.4396,
+    lat: 23.4116,
+    lng: 85.4396,
     detail: "https://a1performanceeuropeanautorepair.com/wp-content/uploads/2019/05/whats_a_bimmer.jpg",
     img: "https://a1performanceeuropeanautorepair.com/wp-content/uploads/2019/05/whats_a_bimmer.jpg",
     url1: `${window.location.origin}/location/biotech-dept`,
@@ -553,8 +553,8 @@ export const locations: Location[] = [
         image: "https://res.cloudinary.com/upwork-cloud/image/upload/c_scale,w_1000/v1709221439/catalog/1644992837384241152/awd7bhcpos7qiyxxt9zz.webp"
       }
     ],
-    lng: 23.4110,
-    lat: 85.4395,
+    lat: 23.411776654946454, 
+    lng: 85.43954868015483,
     detail: "https://a1performanceeuropeanautorepair.com/wp-content/uploads/2019/05/whats_a_bimmer.jpg",
     img: "https://a1performanceeuropeanautorepair.com/wp-content/uploads/2019/05/whats_a_bimmer.jpg",
     url1: `${window.location.origin}/location/maths-dept`,
