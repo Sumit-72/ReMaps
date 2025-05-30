@@ -15,7 +15,15 @@ const Hero: React.FC = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center"
         style={{ 
-          backgroundImage: "url('/hero_img.jpg')", 
+          backgroundImage: "url('/hero2.jpg')", 
+          filter: 'brightness(0.7)'
+        }}
+      ></div>
+
+      <div 
+        className="absolute inset-0 bg-cover bg-center md:hidden"
+        style={{ 
+          backgroundImage: "url('/hero3.jpg')", 
           filter: 'brightness(0.7)'
         }}
       ></div>
