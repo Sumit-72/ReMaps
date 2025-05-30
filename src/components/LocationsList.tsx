@@ -72,12 +72,22 @@ const LocationsList: React.FC = () => {
               <p className="text-gray-600 text-sm line-clamp-2 mb-3">{location.description}</p>
               <div className="flex items-center text-xs text-gray-500">
                 <MapPin className="h-4 w-4 mr-1" />
-                <span>{location.address}</span>
+                <a
+                  href={location.url2}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-500 hover:text-blue-700 dark:hover:text-blue-300 text-sm underline"
+                  onClick={e => e.stopPropagation()} // Prevents parent Link navigation
+                >
+                  View on Google Maps
+                </a>
               </div>
-              <div className="flex items-center text-xs text-gray-500 mt-1">
+              {location.hours && (
+                <div className="flex items-center text-xs text-gray-500 mt-1">
                 <Clock className="h-4 w-4 mr-1" />
                 <span>{location.hours}</span>
               </div>
+              )}
               <button className="mt-3 flex items-center text-blue-500 text-sm font-medium group-hover:text-blue-700 transition-colors">
                 <Info className="h-4 w-4 mr-1" />
                 <span>View Details</span>
