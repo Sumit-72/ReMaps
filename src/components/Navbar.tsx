@@ -76,9 +76,9 @@ const Navbar: React.FC = () => {
           {/* Mobile: Only search + home icon + dark toggle */}
           <div className="flex md:hidden items-center space-x-2">
             <SearchBar className="w-32" />
-            <Link to="/" aria-label="Home" className="text-blue-600">
+            {/* <Link to="/" aria-label="Home" className="text-blue-600">
               <MapPin className="h-6 w-6" />
-            </Link>
+            </Link> */}
             <button
               onClick={toggleDarkMode}
               className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
