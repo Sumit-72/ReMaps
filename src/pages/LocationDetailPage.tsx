@@ -108,12 +108,19 @@ const LocationDetailPage: React.FC = () => {
               
               <div className="space-y-4">
                 <div className="flex items-start">
-                  <MapPin className="h-5 w-5 text-blue-500 mt-0.5 mr-3 flex-shrink-0" />
-                  <div>
-                    <h4 className="font-medium text-gray-900 dark:text-white">Address</h4>
-                    <p className="text-gray-600 dark:text-gray-300 text-sm">{location.address}</p>
-                  </div>
+                <MapPin className="h-5 w-5 text-blue-500 mt-0.5 mr-3 flex-shrink-0" />
+                <div>
+                  <h4 className="font-medium text-gray-900 dark:text-white">Google Maps</h4>
+                  <a
+                    href={location.url2}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-500 hover:text-blue-700 dark:hover:text-blue-300 text-sm underline"
+                  >
+                    View on Google Maps
+                  </a>
                 </div>
+              </div>
                 
                 <div className="flex items-start">
                   <Clock className="h-5 w-5 text-blue-500 mt-0.5 mr-3 flex-shrink-0" />
