@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
           <div className="col-span-1 md:col-span-1">
             <div className="flex items-center">
               <MapPin className="h-8 w-8 text-blue-400" />
-              <span className="ml-2 text-xl font-bold">CampusNav</span>
+              <span className="ml-2 text-xl font-bold">ReMaps</span>
             </div>
             <p className="mt-2 text-sm text-gray-400">
               Helping you navigate campus life with ease and confidence.
@@ -83,7 +83,7 @@ const Footer: React.FC = () => {
               </div>
               <div className="flex items-center">
                 <Mail className="h-5 w-5 text-gray-400 mr-2" />
-                <span className="text-gray-400">info@campusnav.edu</span>
+                <span className="text-gray-400">info@ReMaps.edu</span>
               </div>
             </div>
           </div>

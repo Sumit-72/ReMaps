@@ -44,7 +44,7 @@ const Navbar: React.FC = () => {
           {/* Left: Brand (always visible) */}
           <Link to="/" className="flex items-center">
             <MapPin className="h-8 w-8 text-blue-500" />
-            <span className="ml-2 text-xl font-bold text-slate-800 dark:text-white">CampusNav</span>
+            <span className="ml-2 text-xl font-bold text-slate-800 dark:text-white">ReMaps</span>
           </Link>
 
           {/* Desktop Navigation */}

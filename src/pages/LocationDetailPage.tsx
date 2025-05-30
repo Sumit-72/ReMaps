@@ -39,7 +39,7 @@ const LocationDetailPage: React.FC = () => {
   }
 
   return (
-    <div className="min-h-screen pt-24 pb-12">
+    <div className="min-h-screen pt-24 pb-12 dark:bg-black">
       {/* Hero Image */}
       <div 
         className="h-64 md:h-96 bg-cover bg-center relative"
@@ -64,7 +64,7 @@ const LocationDetailPage: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <Link 
           to="/" 
-          className="inline-flex items-center text-blue-500 hover:text-blue-700 transition-colors mb-8"
+          className="inline-flex items-center text-blue-500 hover:text-blue-700 dark:hover:text-blue-300 transition-colors mb-8"
         >
           <ArrowLeft className="h-4 w-4 mr-2" />
           Back to Campus Map
@@ -72,24 +72,24 @@ const LocationDetailPage: React.FC = () => {
         
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <div className="lg:col-span-2">
-            <div className="bg-white rounded-lg shadow-md p-6 mb-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">About This Location</h2>
-              <p className="text-gray-700 mb-6 leading-relaxed">{location.description}</p>
+            <div className="bg-white dark:bg-gray-900 rounded-lg shadow-md p-6 mb-8">
+              <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">About This Location</h2>
+              <p className="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">{location.description}</p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
                 {location.highlights && location.highlights.map((highlight, index) => (
-                  <div key={index} className="bg-gray-50 p-4 rounded-lg">
-                    <h3 className="font-semibold text-gray-900 mb-2">{highlight.title}</h3>
-                    <p className="text-gray-600 text-sm">{highlight.description}</p>
+                  <div key={index} className="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg">
+                    <h3 className="font-semibold text-gray-900 dark:text-white mb-2">{highlight.title}</h3>
+                    <p className="text-gray-600 dark:text-gray-300 text-sm">{highlight.description}</p>
                   </div>
                 ))}
               </div>
             </div>
             
             {location.sections && location.sections.map((section, index) => (
-              <div key={index} className="bg-white rounded-lg shadow-md p-6 mb-8">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">{section.title}</h2>
-                <p className="text-gray-700 mb-6 leading-relaxed">{section.content}</p>
+              <div key={index} className="bg-white dark:bg-gray-900 rounded-lg shadow-md p-6 mb-8">
+                <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">{section.title}</h2>
+                <p className="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">{section.content}</p>
                 
                 {section.image && (
                   <img 
@@ -103,23 +103,23 @@ const LocationDetailPage: React.FC = () => {
           </div>
           
           <div className="lg:col-span-1">
-            <div className="bg-white rounded-lg shadow-md p-6 mb-8 sticky top-24">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Location Information</h3>
+            <div className="bg-white dark:bg-gray-900 rounded-lg shadow-md p-6 mb-8 sticky top-24">
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Location Information</h3>
               
               <div className="space-y-4">
                 <div className="flex items-start">
                   <MapPin className="h-5 w-5 text-blue-500 mt-0.5 mr-3 flex-shrink-0" />
                   <div>
-                    <h4 className="font-medium text-gray-900">Address</h4>
-                    <p className="text-gray-600 text-sm">{location.address}</p>
+                    <h4 className="font-medium text-gray-900 dark:text-white">Address</h4>
+                    <p className="text-gray-600 dark:text-gray-300 text-sm">{location.address}</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start">
                   <Clock className="h-5 w-5 text-blue-500 mt-0.5 mr-3 flex-shrink-0" />
                   <div>
-                    <h4 className="font-medium text-gray-900">Hours</h4>
-                    <p className="text-gray-600 text-sm">{location.hours}</p>
+                    <h4 className="font-medium text-gray-900 dark:text-white">Hours</h4>
+                    <p className="text-gray-600 dark:text-gray-300 text-sm">{location.hours}</p>
                   </div>
                 </div>
                 
@@ -127,8 +127,8 @@ const LocationDetailPage: React.FC = () => {
                   <div className="flex items-start">
                     <Phone className="h-5 w-5 text-blue-500 mt-0.5 mr-3 flex-shrink-0" />
                     <div>
-                      <h4 className="font-medium text-gray-900">Phone</h4>
-                      <p className="text-gray-600 text-sm">{location.phone}</p>
+                      <h4 className="font-medium text-gray-900 dark:text-white">Phone</h4>
+                      <p className="text-gray-600 dark:text-gray-300 text-sm">{location.phone}</p>
                     </div>
                   </div>
                 )}
@@ -137,12 +137,12 @@ const LocationDetailPage: React.FC = () => {
                   <div className="flex items-start">
                     <Globe className="h-5 w-5 text-blue-500 mt-0.5 mr-3 flex-shrink-0" />
                     <div>
-                      <h4 className="font-medium text-gray-900">Website</h4>
+                      <h4 className="font-medium text-gray-900 dark:text-white">Website</h4>
                       <a 
                         href={location.website} 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="text-blue-500 hover:text-blue-700 text-sm"
+                        className="text-blue-500 hover:text-blue-700 dark:hover:text-blue-300 text-sm"
                       >
                         Visit website
                       </a>
@@ -154,8 +154,8 @@ const LocationDetailPage: React.FC = () => {
                   <div className="flex items-start">
                     <Calendar className="h-5 w-5 text-blue-500 mt-0.5 mr-3 flex-shrink-0" />
                     <div>
-                      <h4 className="font-medium text-gray-900">Upcoming Events</h4>
-                      <ul className="text-gray-600 text-sm mt-1 space-y-2">
+                      <h4 className="font-medium text-gray-900 dark:text-white">Upcoming Events</h4>
+                      <ul className="text-gray-600 dark:text-gray-300 text-sm mt-1 space-y-2">
                         {location.events.map((event, index) => (
                           <li key={index}>
                             <p className="font-medium">{event.title}</p>
@@ -169,28 +169,28 @@ const LocationDetailPage: React.FC = () => {
               </div>
               
               <div className="mt-8">
-                <h3 className="text-lg font-bold text-gray-900 mb-4">Similar Locations</h3>
+                <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-4">Similar Locations</h3>
                 {relatedLocations.length > 0 ? (
                   <div className="space-y-4">
                     {relatedLocations.map(relatedLoc => (
                       <Link 
                         key={relatedLoc.id} 
                         to={`/location/${relatedLoc.id}`}
-                        className="flex items-center p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
+                        className="flex items-center p-3 bg-gray-50 dark:bg-gray-800 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
                       >
                         <div 
                           className="h-12 w-12 bg-cover bg-center rounded-md mr-3 flex-shrink-0"
                           style={{ backgroundImage: `url(${relatedLoc.image})` }}
                         ></div>
                         <div>
-                          <h4 className="font-medium text-gray-900 text-sm">{relatedLoc.name}</h4>
-                          <p className="text-gray-500 text-xs">{relatedLoc.category}</p>
+                          <h4 className="font-medium text-gray-900 dark:text-white text-sm">{relatedLoc.name}</h4>
+                          <p className="text-gray-500 dark:text-gray-400 text-xs">{relatedLoc.category}</p>
                         </div>
                       </Link>
                     ))}
                   </div>
                 ) : (
-                  <p className="text-gray-600 text-sm">No similar locations found.</p>
+                  <p className="text-gray-600 dark:text-gray-300 text-sm">No similar locations found.</p>
                 )}
               </div>
             </div>

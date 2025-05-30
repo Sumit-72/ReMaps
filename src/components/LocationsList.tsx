@@ -22,7 +22,7 @@ const LocationsList: React.FC = () => {
   return (
     <div className="my-8">
       <div className="mb-6">
-        <h3 className="text-lg font-semibold text-gray-700 mb-2">Filter by Category</h3>
+        <h3 className="text-lg font-semibold text-gray-700 dark:text-gray-300 mb-2">Filter by Category</h3>
         <div className="flex flex-wrap gap-2">
           <button
             onClick={() => setActiveCategory('all')}
