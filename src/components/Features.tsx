@@ -6,7 +6,7 @@ const Features: React.FC = () => {
     <div className="py-16 bg-white dark:bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-4">Why Use Campus Navigator?</h2>
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-4">Why Use ReMaps?</h2>
           <p className="max-w-2xl mx-auto text-lg text-gray-600 dark:text-gray-300">
             Our platform offers several key features designed to make campus navigation simple and efficient.
           </p>
@@ -63,7 +63,7 @@ const Features: React.FC = () => {
             </div>
             <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-2">Mobile Responsive Design</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              Access the campus navigator on any device with our fully responsive design that works seamlessly
+              Access ReMaps on any device with our fully responsive design that works seamlessly
               on desktops, tablets, and mobile phones, ensuring you can find your way wherever you are.
             </p>
           </div>

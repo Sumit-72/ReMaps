@@ -6,16 +6,16 @@ const AboutUs: React.FC = () => {
     <div className="py-16 bg-gray-50 dark:bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">About Campus Navigator</h2>
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">About ReMaps</h2>
           <p className="max-w-2xl mx-auto text-lg text-gray-600 dark:text-gray-300">
-            Campus Navigator is the best way to explore your campus—helping students, staff, and visitors navigate easily and discover everything it has to offer.
+            ReMaps is the best way to explore your campus—helping students, staff, and visitors navigate easily and discover everything it has to offer.
           </p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <div>
             <img 
-              src="https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+              src="/hero2.jpg" 
               alt="Students on campus" 
               className="rounded-lg shadow-lg object-cover h-80 w-full"
             />
@@ -24,14 +24,11 @@ const AboutUs: React.FC = () => {
           <div>
             <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Our Mission</h3>
             <p className="text-gray-600 dark:text-gray-300 mb-6">
-              Campus Navigator was created to solve the common problem of getting lost on campus. 
-              Whether you're a new student trying to find your classroom, a visitor attending an event, 
-              or simply looking to discover new campus amenities, our platform provides you with 
-              detailed information and directions.
+            Welcome to the ReMaps – your personalized guide to exploring the vibrant and sprawling campus of BIT Mesra. Designed especially for first-year students, our platform helps you find your way around with ease, whether you're heading to classes, hostels, canteens, or lesser-known campus spots.
+            
             </p>
             <p className="text-gray-600 dark:text-gray-300">
-              We collaborate with campus administration to ensure our information is accurate and up-to-date, 
-              making your navigation experience seamless and stress-free.
+            With integrated maps and detailed insights, ReMaps is built to assist students, staff, and visitors in discovering key locations, understanding campus facilities, and making the most of their time at BIT. No more getting lost – just simple, smart navigation to help you feel at home from day one.
             </p>
           </div>
         </div>

@@ -53,7 +53,7 @@ const Footer: React.FC = () => {
             <h3 className="text-sm font-semibold text-gray-300 tracking-wider uppercase mb-4">Campus Resources</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">Academic Calendar</a>
+                <a href="https://bitmesra.ac.in/view/files/58454254372B78485163617735654C413541534853413D3D" className="text-gray-400 hover:text-blue-400 transition-colors">Academic Calendar</a>
               </li>
               <li>
                 <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">Student Services</a>
