@@ -55,7 +55,7 @@ const Footer: React.FC = () => {
               <li>
                 <a href="https://bitmesra.ac.in/view/files/58454254372B78485163617735654C413541534853413D3D" className="text-gray-400 hover:text-blue-400 transition-colors">Academic Calendar</a>
               </li>
-              <li>
+              {/* <li>
                 <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">Student Services</a>
               </li>
               <li>
@@ -66,7 +66,7 @@ const Footer: React.FC = () => {
               </li>
               <li>
                 <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">Dining Options</a>
-              </li>
+              </li> */}
             </ul>
           </div>
           

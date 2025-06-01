@@ -8,20 +8,26 @@ const Developer = () => {
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-4">Our Team</h2>
             <p className="max-w-2xl mx-auto text-lg text-gray-600 dark:text-gray-300">
-            ReMaps is developed and maintained by a dedicated team of students and faculty members who are passionate about improving campus accessibility.
+            ReMaps is developed and maintained by a dedicated team of students who are passionate about improving campus accessibility.
             </p>
           </div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                name: "Alex Johnson",
+                name: "Sumit Shekhar",
                 role: "Project Lead",
                 image: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
                 bio: "Computer Science major with a passion for creating useful applications that solve real problems on campus."
               },
               {
-                name: "Emma Rodriguez",
+                name: "Pranav",
+                role: "Student Ambassador",
+                image: "https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+                bio: "Student government representative who gathers feedback and feature requests from the campus community."
+              },
+              {
+                name: "Aditya Pandit",
                 role: "Student Ambassador",
                 image: "https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
                 bio: "Student government representative who gathers feedback and feature requests from the campus community."

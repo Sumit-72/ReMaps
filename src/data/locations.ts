@@ -809,7 +809,7 @@ export const locations: Location[] = [
     lat: 23.415685253583035,
     lng: 85.43799612028879,
     detail: "Boys Hostel",    
-    img: "",
+    img: "https://lh3.googleusercontent.com/gps-cs-s/AC9h4npk-Pat8fa8l2DVaTN1gRdvS2RlU8t5k2YTOWBFx6-vsAh51U_rcI4e5Bn-IU8_xnGyvqxrIBxq3oawx_6xbsqMxsvnVYuH_aG4MIdLlNxETLyU3ayCztQ5703Ivl2B2KQHWgHq=s1360-w1360-h1020-rw",
     url1: `${window.location.origin}/location/h4`,
     url2: "https://www.google.com/maps/place/Hostel-4+BIT+MESRA/@23.415065,85.4376072,18.33z/data=!4m6!3m5!1s0x39f4fb3ce16ada83:0x2c2b4a4b4d1def6a!8m2!3d23.4155867!4d85.4379342!16s%2Fg%2F11k50j7hln?entry=ttu&g_ep=EgoyMDI1MDUyNi4wIKXMDSoASAFQAw%3D%3D"
   },
@@ -1311,8 +1311,8 @@ export const locations: Location[] = [
       }
     ],
     sections: [],
-    lat: 23.417868376535374,
-    lng: 85.43462895207571,
+    lat: 23.42369120428739,
+    lng: 85.43260817791109,
     detail: "Student favorite for snacks & chats",
     img: "/img/locations/techno.jpeg",
     url1: `${window.location.origin}/location/techno`,
@@ -1381,7 +1381,7 @@ export const locations: Location[] = [
     url2: "https://www.google.com/maps/place/OC+(Outer+Co-operative)/@23.4240034,85.4388231,18z/data=!4m14!1m7!3m6!1s0x39f4e5006145900d:0x487fc55c1b16a1bf!2sHostel+13!8m2!3d23.417788!4d85.4346!16s%2Fg%2F11x199_tzz!3m5!1s0x39f4fb4d705a0541:0xdbb8590e6a92f7ae!8m2!3d23.423758!4d85.4396138!16s%2Fg%2F1hdzmn55z?entry=ttu&g_ep=EgoyMDI1MDUyNy4wIKXMDSoASAFQAw%3D%3D"
   },
   {
-    id: "Pahan",
+    id: "pahan",
     map_id: 33,
     name: "Pahan Tea Shop",
     category: "Dining & Food",
