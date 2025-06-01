@@ -1311,8 +1311,8 @@ export const locations: Location[] = [
       }
     ],
     sections: [],
-    lat: 23.42369120428739,
-    lng: 85.43260817791109,
+    lat: 23.423533044104083,
+    lng: 85.43263535401806,
     detail: "Student favorite for snacks & chats",
     img: "/img/locations/techno.jpeg",
     url1: `${window.location.origin}/location/techno`,
