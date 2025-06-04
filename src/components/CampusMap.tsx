@@ -105,11 +105,11 @@ const CampusMap: React.FC<GoogleMapProps> = ({ apiKey }) => {
                 return loc ? (
                   <>
                     <h3 style={{ fontWeight: 'bold', color: 'black'}}>{loc.name}</h3>
-                    <p className='text-black'>{loc.detail}</p>
+                    <p className='text-black mb-1 mt-1'>{loc.detail}</p>
                     <img
                       src={loc.img}
                       alt={loc.name}
-                      style={{ width: '100%', marginBottom: '5px' }}
+                      className='width-full h-10 object-cover mb-5'
                     />
                     <div style={{ display: 'flex', gap: '10px' }}>
                       {loc.url1 && (
