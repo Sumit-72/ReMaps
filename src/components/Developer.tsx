@@ -18,8 +18,8 @@ const Developer = () => {
             {
               name: "Sumit Shekhar",
               role: "Project Lead",
-              image: "./public/sumit.jpg",
-              linkedin: "https://www.linkedin.com/in/sumit-shekhar",
+              image: "/sumit.jpg",
+              linkedin: "https://www.linkedin.com/in/sumit-shekhar72",
             },
             {
               name: "Aditya Pandit",
