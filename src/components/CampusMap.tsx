@@ -105,7 +105,7 @@ const CampusMap: React.FC<GoogleMapProps> = ({ apiKey }) => {
                 return loc ? (
                   <>
                     <h3 style={{ fontWeight: 'bold', color: 'black'}}>{loc.name}</h3>
-                    <p>{loc.detail}</p>
+                    <p className='text-black'>{loc.detail}</p>
                     <img
                       src={loc.img}
                       alt={loc.name}
