@@ -104,18 +104,18 @@ const CampusMap: React.FC<GoogleMapProps> = ({ apiKey }) => {
                 const loc = locations.find((l) => l.id === selectedLocationId);
                 return loc ? (
                   <>
-                    <h3 style={{ fontWeight: 'bold' }}>{loc.name}</h3>
+                    <h3 style={{ fontWeight: 'bold', color: 'black'}}>{loc.name}</h3>
                     <p>{loc.detail}</p>
                     <img
                       src={loc.img}
                       alt={loc.name}
-                      style={{ width: '100%', marginBottom: '8px' }}
+                      style={{ width: '100%', marginBottom: '5px' }}
                     />
                     <div style={{ display: 'flex', gap: '10px' }}>
                       {loc.url1 && (
                         <button
                           onClick={() => handleNavigate(loc.url1)}
-                          className="bg-blue-500 text-white px-2 py-1 rounded hover:bg-blue-600"
+                          className="bg-blue-500 text-white px-2 py-1 rounded hover:bg-blue-800"
                         >
                           View Details
                         </button>
@@ -123,7 +123,7 @@ const CampusMap: React.FC<GoogleMapProps> = ({ apiKey }) => {
                       {loc.url2 && (
                         <button
                           onClick={() => handleNavigate(loc.url2)}
-                          className="bg-gray-500 text-white px-2 py-1 rounded hover:bg-gray-600"
+                          className="bg-gray-500 text-white px-2 py-1 rounded hover:bg-gray-800"
                         >
                           View Maps
                         </button>

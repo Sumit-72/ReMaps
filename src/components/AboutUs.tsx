@@ -15,9 +15,9 @@ const AboutUs: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <div>
             <img 
-              src="/hero2.jpg" 
+              src="/about_us.jpg" 
               alt="Students on campus" 
-              className="rounded-lg shadow-lg object-cover h-80 w-full"
+              className="rounded-lg shadow-lg  h-80 w-full"
             />
           </div>
           

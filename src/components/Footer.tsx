@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { MapPin, Mail, Phone, Facebook, Twitter, Instagram, Github as GitHub } from 'lucide-react';
+import { MapPin, Mail,  Facebook, Twitter, Instagram, Github as GitHub } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -75,12 +75,12 @@ const Footer: React.FC = () => {
             <div className="space-y-3">
               <div className="flex items-start">
                 <MapPin className="h-5 w-5 text-gray-400 mr-2 mt-0.5" />
-                <span className="text-gray-400">123 University Way,<br />Campus City, ST 12345</span>
+                <span className="text-gray-400">Birla Institute of Technology Mesra,<br />Ranchi, Jharkhand 835215</span>
               </div>
-              <div className="flex items-center">
+              {/* <div className="flex items-center">
                 <Phone className="h-5 w-5 text-gray-400 mr-2" />
                 <span className="text-gray-400">(123) 456-7890</span>
-              </div>
+              </div> */}
               <div className="flex items-center">
                 <Mail className="h-5 w-5 text-gray-400 mr-2" />
                 <span className="text-gray-400">info@ReMaps.edu</span>

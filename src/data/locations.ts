@@ -1380,37 +1380,37 @@ export const locations: Location[] = [
     url1: `${window.location.origin}/location/oc`,
     url2: "https://www.google.com/maps/place/OC+(Outer+Co-operative)/@23.4240034,85.4388231,18z/data=!4m14!1m7!3m6!1s0x39f4e5006145900d:0x487fc55c1b16a1bf!2sHostel+13!8m2!3d23.417788!4d85.4346!16s%2Fg%2F11x199_tzz!3m5!1s0x39f4fb4d705a0541:0xdbb8590e6a92f7ae!8m2!3d23.423758!4d85.4396138!16s%2Fg%2F1hdzmn55z?entry=ttu&g_ep=EgoyMDI1MDUyNy4wIKXMDSoASAFQAw%3D%3D"
   },
-  {
-    id: "pahan",
-    map_id: 33,
-    name: "Pahan Tea Shop",
-    category: "Dining & Food",
-    description: "The Pahan Tea Shop offers a variety of snacks and drinks, making it a convenient stop for students seeking a quick bite or refreshment.",
-    address: "",
-    hours: "",
-    image: "",
-    position: { x: 65, y: 45 },
-    phone: "",
-    website: "",
-    events: [],
-    highlights: [
-      {
-        title: "Quick Bites",
-        description: "Serves a range of snacks like kachori and other light eats."
-      },
-      {
-        title: "Beverages",
-        description: "Offers tea and other drinks to refresh students during their breaks."
-      }
-    ],
-    sections: [],
-    lat: 23.41764234310873,
-    lng: 85.43414868412995,
-    detail: "Quick bites and chai breaks.",
-    img: "",
-    url1: `${window.location.origin}/location/pahan`,
-    url2: "https://www.google.com/maps/place/Pahan+Tea+Shop/@23.41763,85.43385,21z/data=!4m10!1m2!2m1!1spahan!3m6!1s0x39f4e4ac710c45dd:0x98755fcfe2504f1c!8m2!3d23.4176113!4d85.4341246!15sCgVwYWhhbloHIgVwYWhhbpIBBWRoYWJhqgE4EAEqCSIFcGFoYW4oADIeEAEiGpMaI0CAIsi-7chcOXsc_g3WTbrGAkf0WjznMgkQAiIFcGFoYW7gAQA!16s%2Fg%2F11cmt94jpx?entry=ttu&g_ep=EgoyMDI1MDUyNy4wIKXMDSoASAFQAw%3D%3D"
-  },
+  // {
+  //   id: "pahan",
+  //   map_id: 33,
+  //   name: "Pahan Tea Shop",
+  //   category: "Dining & Food",
+  //   description: "The Pahan Tea Shop offers a variety of snacks and drinks, making it a convenient stop for students seeking a quick bite or refreshment.",
+  //   address: "",
+  //   hours: "",
+  //   image: "",
+  //   position: { x: 65, y: 45 },
+  //   phone: "",
+  //   website: "",
+  //   events: [],
+  //   highlights: [
+  //     {
+  //       title: "Quick Bites",
+  //       description: "Serves a range of snacks like kachori and other light eats."
+  //     },
+  //     {
+  //       title: "Beverages",
+  //       description: "Offers tea and other drinks to refresh students during their breaks."
+  //     }
+  //   ],
+  //   sections: [],
+  //   lat: 23.41764234310873,
+  //   lng: 85.43414868412995,
+  //   detail: "Quick bites and chai breaks.",
+  //   img: "",
+  //   url1: `${window.location.origin}/location/pahan`,
+  //   url2: "https://www.google.com/maps/place/Pahan+Tea+Shop/@23.41763,85.43385,21z/data=!4m10!1m2!2m1!1spahan!3m6!1s0x39f4e4ac710c45dd:0x98755fcfe2504f1c!8m2!3d23.4176113!4d85.4341246!15sCgVwYWhhbloHIgVwYWhhbpIBBWRoYWJhqgE4EAEqCSIFcGFoYW4oADIeEAEiGpMaI0CAIsi-7chcOXsc_g3WTbrGAkf0WjznMgkQAiIFcGFoYW7gAQA!16s%2Fg%2F11cmt94jpx?entry=ttu&g_ep=EgoyMDI1MDUyNy4wIKXMDSoASAFQAw%3D%3D"
+  // },
   {
     id: "shorbagh-1",
     map_id: 34,
