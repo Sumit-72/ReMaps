@@ -99,23 +99,23 @@ const CampusMap: React.FC<GoogleMapProps> = ({ apiKey }) => {
             }}
             onCloseClick={() => setSelectedLocationId(null)}
           >
-            <div style={{ maxWidth: '200px' }}>
+            <div className="max-w-xs p-3 bg-white rounded-lg shadow-md">
               {(() => {
                 const loc = locations.find((l) => l.id === selectedLocationId);
                 return loc ? (
                   <>
-                    <h3 style={{ fontWeight: 'bold', color: 'black'}}>{loc.name}</h3>
-                    <p className='text-black mb-1 mt-1'>{loc.detail}</p>
+                    <h3 className="text-base font-semibold text-gray-900 mb-1">{loc.name}</h3>
+                    <p className="text-sm text-gray-700 mb-2">{loc.detail}</p>
                     <img
                       src={loc.img}
                       alt={loc.name}
-                      className='width-full h-10 object-cover mb-5'
+                      className="w-full h-24 object-cover rounded mb-3"
                     />
-                    <div style={{ display: 'flex', gap: '10px' }}>
+                    <div className="flex flex-wrap gap-2">
                       {loc.url1 && (
                         <button
                           onClick={() => handleNavigate(loc.url1)}
-                          className="bg-blue-500 text-white px-2 py-1 rounded hover:bg-blue-800"
+                          className="bg-blue-500 text-white text-sm px-3 py-1 rounded hover:bg-blue-700 transition"
                         >
                           View Details
                         </button>
@@ -123,7 +123,7 @@ const CampusMap: React.FC<GoogleMapProps> = ({ apiKey }) => {
                       {loc.url2 && (
                         <button
                           onClick={() => handleNavigate(loc.url2)}
-                          className="bg-gray-500 text-white px-2 py-1 rounded hover:bg-gray-800"
+                          className="bg-gray-500 text-white text-sm px-3 py-1 rounded hover:bg-gray-700 transition"
                         >
                           View Maps
                         </button>
@@ -133,6 +133,7 @@ const CampusMap: React.FC<GoogleMapProps> = ({ apiKey }) => {
                 ) : null;
               })()}
             </div>
+
           </InfoWindow>
         )}
       </GoogleMap>
