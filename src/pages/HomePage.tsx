@@ -34,10 +34,11 @@ const HomePage: React.FC = () => {
       </div>
       
       <Features />
-      <div id="about-us" >
+
+      <div id="about-us">
         <AboutUs />
       </div>
-      
+
       <Developer />
     </div>
   );
