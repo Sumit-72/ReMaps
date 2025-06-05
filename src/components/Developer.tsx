@@ -9,7 +9,8 @@ const Developer = () => {
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-4">Our Team</h2>
             <p className="max-w-2xl mx-auto text-lg text-gray-600 dark:text-gray-300">
-            ReMaps is developed and maintained by a dedicated team of students who are passionate about improving campus accessibility.
+            ReMaps is developed and maintained by a dedicated team of students who are passionate about improving campus accessibility. 
+                        JK ;) We had some free-time and here's the result!
             </p>
           </div>
           
@@ -17,21 +18,21 @@ const Developer = () => {
           {[
             {
               name: "Sumit Shekhar",
-              role: "Project Lead",
+              // role: "Project Lead",
               image: "/sumit.jpg",
               linkedin: "https://www.linkedin.com/in/sumit-shekhar72",
             },
             {
               name: "Aditya Pandit",
-              role: "Student Ambassador",
-              image: "https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-              linkedin: "https://www.linkedin.com/in/aditya-pandit",
+              // role: "Student Ambassador",
+              image: "/aditya.png",
+              linkedin: "https://www.linkedin.com/in/aditya-pandit-54161028a",
             },
             {
-              name: "Pranav",
-              role: "Student Ambassador",
-              image: "https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-              linkedin: "https://www.linkedin.com/in/pranav",
+              name: "Pranav Prajyot",
+              // role: "Student Ambassador",
+              image: "/pranav.png",
+              linkedin: "https://www.linkedin.com/in/pranav-prajyot-b297232a4/",
             }
           ].map((member, index) => (
             <div key={index} className="bg-white dark:bg-gray-900 rounded-lg shadow-md overflow-hidden">
@@ -41,7 +42,7 @@ const Developer = () => {
               ></div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 dark:text-gray-100">{member.name}</h3>
-                <p className="text-blue-500 dark:text-blue-300 mb-3">{member.role}</p>
+                {/* <p className="text-blue-500 dark:text-blue-300 mb-3">{member.role}</p> */}
                 <a
                   href={member.linkedin}
                   target="_blank"
