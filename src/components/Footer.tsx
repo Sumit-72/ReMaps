@@ -16,16 +16,16 @@ const Footer: React.FC = () => {
               Helping you navigate campus life with ease and confidence.
             </p>
             <div className="mt-4 flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-blue-400">
+              <a href="https://www.facebook.com/BITMesraRanchi/" className="text-gray-400 hover:text-blue-400">
                 <Facebook className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-blue-400">
+              <a href="https://x.com/bit_mesra?lang=en" className="text-gray-400 hover:text-blue-400">
                 <Twitter className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-blue-400">
+              <a href="https://www.instagram.com/bitmesra_ranchi/?hl=en" className="text-gray-400 hover:text-blue-400">
                 <Instagram className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-blue-400">
+              <a href="https://github.com/Sumit-72/ReMaps" className="text-gray-400 hover:text-blue-400">
                 <GitHub className="h-5 w-5" />
               </a>
             </div>
@@ -38,7 +38,7 @@ const Footer: React.FC = () => {
                 <Link to="/" className="text-gray-400 hover:text-blue-400 transition-colors">Home</Link>
               </li>
               <li>
-                <Link to="/about" className="text-gray-400 hover:text-blue-400 transition-colors">About Us</Link>
+                <Link to="#about" className="text-gray-400 hover:text-blue-400 transition-colors">About Us</Link>
               </li>
               <li>
                 <a href="#map-section" className="text-gray-400 hover:text-blue-400 transition-colors">Campus Map</a>

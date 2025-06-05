@@ -17,19 +17,19 @@ const Developer = () => {
           {[
             {
               name: "Sumit Shekhar",
-              role: "Project Lead",
+              // role: "Project Lead",
               image: "/sumit.jpg",
               linkedin: "https://www.linkedin.com/in/sumit-shekhar72",
             },
             {
               name: "Aditya Pandit",
-              role: "Student Ambassador",
-              image: "https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-              linkedin: "https://www.linkedin.com/in/aditya-pandit",
+              // role: "Student Ambassador",
+              image: "/aditya.png",
+              linkedin: "https://www.linkedin.com/in/aditya-pandit-54161028a",
             },
             {
               name: "Pranav",
-              role: "Student Ambassador",
+              // role: "Student Ambassador",
               image: "https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
               linkedin: "https://www.linkedin.com/in/pranav",
             }
@@ -41,7 +41,7 @@ const Developer = () => {
               ></div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 dark:text-gray-100">{member.name}</h3>
-                <p className="text-blue-500 dark:text-blue-300 mb-3">{member.role}</p>
+                {/* <p className="text-blue-500 dark:text-blue-300 mb-3">{member.role}</p> */}
                 <a
                   href={member.linkedin}
                   target="_blank"
