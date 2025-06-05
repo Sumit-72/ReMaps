@@ -83,7 +83,12 @@ const Footer: React.FC = () => {
               </div> */}
               <div className="flex items-center">
                 <Mail className="h-5 w-5 text-gray-400 mr-2" />
-                <span className="text-gray-400">info@ReMaps.edu</span>
+                <a
+                  href="mailto:remaps.bit@gmail.com"
+                  className="text-gray-400 hover:text-blue-400 transition-colors"
+                >
+                  remaps.bit@gmail.com
+                </a>
               </div>
             </div>
           </div>
