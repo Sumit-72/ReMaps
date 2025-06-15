@@ -15,14 +15,14 @@ const Hero: React.FC = () => {
       <img
         src="/hero2.jpg"
         alt="Campus background"
-        className="absolute inset-0 w-full h-full object-cover hidden md:block"
+        className="absolute inset-0 w-full h-full object-cover filter brightness-75 hidden md:block"
         loading="eager"
         fetchPriority="high"
       />
       <img
         src="/hero3.jpg"
         alt="Campus mobile background"
-        className="absolute inset-0 w-full h-full object-cover md:hidden"
+        className="absolute inset-0 w-full h-full object-cover filter brightness-75 md:hidden"
         loading="eager"
         fetchPriority="high"
       />
