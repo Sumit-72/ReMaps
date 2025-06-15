@@ -1,12 +1,9 @@
-import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
-// import LocationDetailPage from './pages/LocationDetailPage';
+import LocationDetailPage from './pages/LocationDetailPage';
 import { SearchProvider } from './contexts/SearchContext';
-
-const LocationDetailPage = React.lazy(() => import('./pages/LocationDetailPage'));
 
 function App() {
   return (
