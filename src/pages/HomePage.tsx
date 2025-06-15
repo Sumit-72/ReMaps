@@ -1,14 +1,21 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import Hero from '../components/Hero';
-import CampusMap from '../components/CampusMap';
+// import CampusMap from '../components/CampusMap';
 import LocationsList from '../components/LocationsList';
 import Features from '../components/Features';
 import AboutUs from '../components/AboutUs';
 import Developer from '../components/Developer';
+import SEO from '../components/SEO';
+
+const CampusMap = React.lazy(() => import('../components/CampusMap'));
 
 const HomePage: React.FC = () => {
   return (
     <div className='dark:bg-gray-900 bg-white dark:text-white '> 
+    <SEO
+    title="Remaps - Navigate & Explore Your Campus with Smart Maps"
+    description="Remaps helps you easily find buildings, routes, and facilities on your campus. Compare maps, get directions, and explore your college with smart, interactive navigation."
+  />
       <Hero />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -19,7 +26,11 @@ const HomePage: React.FC = () => {
               Explore our campus through this interactive map. Click on markers to see more details about each location.
             </p>
           </div>
-          <CampusMap apiKey={import.meta.env.VITE_API_KEY} />
+
+          <Suspense fallback={<div className="h-96 flex justify-center items-center text-white">Loading map...</div>}>
+            <CampusMap apiKey={import.meta.env.VITE_API_KEY} />
+          </Suspense>        
+
         </div>
         
         <div id="locations" >

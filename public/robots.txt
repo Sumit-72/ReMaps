@@ -1,0 +1,10 @@
+# Remaps robots.txt
+User-agent: *
+Disallow:
+
+# Sitemap location
+Sitemap: https://re-maps.vercel.app/sitemap.xml
+
+# Allow crawling of essential resources
+Allow: /static/
+Allow: /images/

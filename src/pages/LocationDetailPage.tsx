@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { locations } from '../data/locations';
 import { ArrowLeft, MapPin, Clock, Phone, Globe, Calendar, ChevronRight } from 'lucide-react';
+import SEO from '../components/SEO';
 
 const LocationDetailPage: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -40,6 +41,10 @@ const LocationDetailPage: React.FC = () => {
 
   return (
     <div className="min-h-screen pt-24 pb-12 dark:bg-black">
+    <SEO
+      title={`${location.name} - Explore Campus Location | Remaps`}
+      description={`Find directions, nearby facilities, and details about ${location.name} on your campus using Remaps - your smart campus navigation tool.`}
+    />
       {/* Hero Image */}
       <div 
         className="h-64 md:h-96 bg-cover bg-center relative"

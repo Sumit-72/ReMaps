@@ -14,10 +14,11 @@ const AboutUs: React.FC = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <div>
-            <img 
-              src="/about_us.jpg" 
-              alt="Students on campus" 
-              className="rounded-lg shadow-lg  h-80 w-full"
+            <img
+              src="/about_us.jpg"
+              alt="About us"
+              className="rounded-lg shadow-lg h-80 w-full"
+              loading="lazy"
             />
           </div>
           
