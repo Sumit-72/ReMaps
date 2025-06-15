@@ -333,7 +333,7 @@ export const locations: Location[] = [
     description: "Established in 1972, the department is a recognized hub for quality pharmaceutical education and research. Backed by experienced faculty, global collaborations, and cutting-edge labs, it prepares students for innovation and leadership in the pharma sector.",
     address: "",
     hours: "",
-    image: "https://scontent.fixr3-3.fna.fbcdn.net/v/t39.30808-6/241068177_112330291166637_3219342692061970471_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=101&ccb=1-7&_nc_sid=2285d6&_nc_ohc=aTs9ali-8YkQ7kNvwEAQHtc&_nc_oc=Adk592plD9q0Hhu47ISbKLvHzzmJ26Mrh9h_1_6syd1UBL2NnVFiK3kRuNBCgUbTrxyQUFkQCJ_sJTCm2kM_QPBi&_nc_zt=23&_nc_ht=scontent.fixr3-3.fna&_nc_gid=_04VRvDSV2KEU1eeVYB6jw&oh=00_AfL13anwmaDs_ljUqJIzGsl_BgqmGMwi175Gaz9w37OetQ&oe=683CF357",
+    image: "/img/locations/p_dept.jpg",
     position: { x: 65, y: 45 },
     phone: "",
     website: "https://bitmesra.ac.in/edudepartment/1/77",
@@ -369,7 +369,7 @@ export const locations: Location[] = [
     lat: 23.41052092771194,
     lng: 85.44090589202888,
     detail: "Innovating healthcare through cutting-edge pharmaceutical sciences",
-    img: "https://scontent.fixr3-3.fna.fbcdn.net/v/t39.30808-6/241068177_112330291166637_3219342692061970471_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=101&ccb=1-7&_nc_sid=2285d6&_nc_ohc=aTs9ali-8YkQ7kNvwEAQHtc&_nc_oc=Adk592plD9q0Hhu47ISbKLvHzzmJ26Mrh9h_1_6syd1UBL2NnVFiK3kRuNBCgUbTrxyQUFkQCJ_sJTCm2kM_QPBi&_nc_zt=23&_nc_ht=scontent.fixr3-3.fna&_nc_gid=_04VRvDSV2KEU1eeVYB6jw&oh=00_AfL13anwmaDs_ljUqJIzGsl_BgqmGMwi175Gaz9w37OetQ&oe=683CF357",
+    img: "/img/locations/p_dept.jpg",
     url1: `${window.location.origin}/location/pharma-dept`,
     url2: "https://www.google.com/maps/place/Department+of+Pharmaceutical+Sciences+%26+Technology/@23.410612,85.440867,19z/data=!4m6!3m5!1s0x39f4fcaa702221f5:0xaa611d87d69c6d99!8m2!3d23.410612!4d85.440867!16s%2Fg%2F11g_zz3w1?entry=ttu&g_ep=EgoyMDI1MDUyNi4wIKXMDSoASAFQAw%3D%3D"
   },
