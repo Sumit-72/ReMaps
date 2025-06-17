@@ -1,6 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://re-maps.vercel.app/</loc>
+    <lastmod>2025-06-17</lastmod>        <!-- Optional but useful -->
+    <changefreq>weekly</changefreq>      <!-- Optional -->
+    <priority>0.8</priority>             <!-- Optional -->
   </url>
 </urlset>

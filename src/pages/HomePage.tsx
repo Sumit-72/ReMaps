@@ -13,7 +13,7 @@ const HomePage: React.FC = () => {
   return (
     <div className='dark:bg-gray-900 bg-white dark:text-white '> 
     <SEO
-    title="Remaps - Navigate & Explore Your Campus with Smart Maps"
+    title="Remaps"
     description="Remaps helps you easily find buildings, routes, and facilities on your campus. Compare maps, get directions, and explore your college with smart, interactive navigation."
   />
       <Hero />

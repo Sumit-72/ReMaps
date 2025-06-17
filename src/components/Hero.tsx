@@ -13,14 +13,14 @@ const Hero: React.FC = () => {
     <div className="relative h-screen overflow-hidden">
       {/* Optimized Images */}
       <img
-        src="/hero2.jpg"
+        src="/hero2.webp"
         alt="Campus background"
         className="absolute inset-0 w-full h-full object-cover filter brightness-75 hidden md:block"
         loading="eager"
         fetchPriority="high"
       />
       <img
-        src="/hero3.jpg"
+        src="/hero3.webp"
         alt="Campus mobile background"
         className="absolute inset-0 w-full h-full object-cover filter brightness-75 md:hidden"
         loading="eager"

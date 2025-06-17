@@ -42,7 +42,7 @@ const LocationDetailPage: React.FC = () => {
   return (
     <div className="min-h-screen pt-24 pb-12 dark:bg-black">
     <SEO
-      title={`${location.name} - Explore Campus Location | Remaps`}
+      title={`${location.name} | Remaps`}
       description={`Find directions, nearby facilities, and details about ${location.name} on your campus using Remaps - your smart campus navigation tool.`}
     />
       {/* Hero Image */}
