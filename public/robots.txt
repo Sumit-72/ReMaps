@@ -1,4 +1,4 @@
-# Remaps robots.txt
+# ReMaps robots.txt
 User-agent: *
 Disallow:
 
